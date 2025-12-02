@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import java.net.URL?>
+<BorderPane fx:controller="com.example.dacs4.controllers.DashboardController"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            prefWidth="1120" prefHeight="720"
+            styleClass="dashboard-root">
+    <!-- CSS sẽ được load bằng code Java sau khi load FXML -->
+    <stylesheets>
+        <URL value="@../css/dashboard.css"/>
+    </stylesheets>
+
+    <!-- HEADER -->
+    <top>
+        <HBox spacing="16" alignment="CENTER_LEFT"
+              styleClass="dashboard-header">
+            <HBox spacing="12" alignment="CENTER_LEFT">
+                <StackPane prefWidth="40" prefHeight="40"
+                           styleClass="app-logo">
+                    <Label text="▶" styleClass="app-logo-icon"/>
+                </StackPane>
+                <Label text="MeetHub" styleClass="app-title"/>
+            </HBox>
+
+            <Pane HBox.hgrow="ALWAYS"/>
+
+            <HBox spacing="12" alignment="CENTER_RIGHT">
+                <!-- Avatar đơn giản: chữ cái đầu -->
+                <StackPane prefWidth="36" prefHeight="36"
+                           styleClass="avatar-circle">
+                    <Label fx:id="avatarInitialLabel" styleClass="avatar-initial"/>
+                </StackPane>
+
+                <VBox spacing="2">
+                    <Label fx:id="userNameLabel" styleClass="user-name"/>
+                    <Label fx:id="userEmailLabel" styleClass="user-email"/>
+                </VBox>
+
+                <Button text="Đăng xuất"
+                        onAction="#onLogoutClicked"
+                        styleClass="ghost-button"/>
+            </HBox>
+        </HBox>
+    </top>
+
+    <!-- MAIN CONTENT -->
+    <center>
+        <VBox spacing="24" BorderPane.alignment="CENTER"
+              styleClass="dashboard-content">
+
+            <!-- QUICK ACTIONS -->
+            <HBox spacing="16">
+
+                <!-- Tạo cuộc họp mới -->
+                <VBox spacing="12" styleClass="card primary-card">
+                    <Label text="Tạo cuộc họp mới" styleClass="card-title"/>
+                    <Label text="Bắt đầu cuộc họp ngay lập tức"
+                           styleClass="card-description"/>
+                    <Button text="Bắt đầu ngay"
+                            onAction="#onCreateNewMeeting"
+                            styleClass="primary-button"/>
+                </VBox>
+
+                <!-- Tham gia cuộc họp -->
+                <VBox spacing="12" styleClass="card success-card">
+                    <Label text="Tham gia cuộc họp" styleClass="card-title"/>
+                    <Label text="Nhập mã cuộc họp để tham gia"
+                           styleClass="card-description"/>
+                    <Button text="Nhập mã cuộc họp"
+                            onAction="#onOpenJoinMeetingDialog"
+                            styleClass="success-button"/>
+                </VBox>
+            </HBox>
+
+            <!-- UPCOMING MEETINGS -->
+            <VBox spacing="12">
+                <Label text="Cuộc họp sắp tới" styleClass="section-title"/>
+                <ScrollPane fitToWidth="true">
+                    <content>
+                        <VBox fx:id="upcomingMeetingsContainer" spacing="8"/>
+                    </content>
+                </ScrollPane>
+            </VBox>
+
+        </VBox>
+    </center>
+
+</BorderPane>

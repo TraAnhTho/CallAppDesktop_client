@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import java.net.URL?>
+
+<BorderPane fx:controller="com.example.dacs4.controllers.MeetingRoomController"
+            xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            prefWidth="1280" prefHeight="720"
+            styleClass="meeting-room-root">
+
+    <stylesheets>
+        <URL value="@../css/meetingroom.css"/>
+    </stylesheets>
+
+    <!-- HEADER -->
+    <top>
+        <HBox spacing="16" alignment="CENTER_LEFT" styleClass="meeting-header">
+            <VBox spacing="2">
+                <Label fx:id="meetingTitleLabel" styleClass="meeting-title"/>
+                <Label fx:id="participantsCountLabel" styleClass="meeting-subtitle"/>
+            </VBox>
+
+            <Pane HBox.hgrow="ALWAYS"/>
+
+            <HBox spacing="8" alignment="CENTER_RIGHT">
+                <Button fx:id="chatButton" text="Chat" onAction="#onToggleChat"
+                        styleClass="header-toggle-button"/>
+                <Button fx:id="participantsButton" text="Người tham gia" onAction="#onToggleParticipants"
+                        styleClass="header-toggle-button"/>
+                <Button fx:id="fileSharingButton" text="Chia sẻ" onAction="#onToggleFileSharing"
+                        styleClass="header-toggle-button"/>
+                <Button text="Rời khỏi" onAction="#onLeaveButtonClicked"
+                        styleClass="leave-button"/>
+            </HBox>
+        </HBox>
+    </top>
+
+    <!-- MAIN CONTENT -->
+    <center>
+        <HBox fx:id="mainContent"
+              HBox.hgrow="ALWAYS"
+              VBox.vgrow="ALWAYS"
+              styleClass="meeting-main">
+
+            <!-- VIDEO GRID -->
+            <StackPane fx:id="videoGridWrapper"
+                       HBox.hgrow="ALWAYS"
+                       VBox.vgrow="ALWAYS"
+                       styleClass="video-grid-wrapper"
+                       minHeight="0" minWidth="0">
+
+                <fx:include source="videoGrid.fxml" fx:id="videoGrid"/>
+
+            </StackPane>
+
+            <!-- SIDE PANEL -->
+            <VBox fx:id="sidePanel"
+                  visible="false"
+                  managed="false"
+                  prefWidth="320"
+                  maxWidth="320"
+                  VBox.vgrow="ALWAYS"
+                  styleClass="side-panel">
+
+                <StackPane fx:id="chatPanelRoot" VBox.vgrow="ALWAYS"
+                           visible="false" managed="false">
+                    <fx:include source="chat.fxml"/>
+                </StackPane>
+
+                <StackPane fx:id="participantsPanelRoot" VBox.vgrow="ALWAYS"
+                           visible="false" managed="false">
+                    <fx:include source="participantsList.fxml"/>
+                </StackPane>
+
+                <StackPane fx:id="fileSharingPanelRoot" VBox.vgrow="ALWAYS"
+                           visible="false" managed="false">
+                    <fx:include source="fileSharing.fxml"/>
+                </StackPane>
+
+            </VBox>
+        </HBox>
+    </center>
+
+    <!-- FOOTER -->
+    <bottom>
+            <fx:include source="meetingControls.fxml" fx:id="meetingControls"/>
+    </bottom>
+
+</BorderPane>

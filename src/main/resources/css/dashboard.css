@@ -1,0 +1,170 @@
+/* ===========================
+   GLOBAL
+=========================== */
+.dashboard-root {
+    -fx-background-color: linear-gradient(to bottom right, #f8fafc, #f1f5f9);
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+.dashboard-header {
+    -fx-padding: 16 24;
+    -fx-background-color: white;
+    -fx-border-color: #e2e8f0;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* Logo */
+.app-logo {
+    -fx-background-color: #4f46e5;
+    -fx-background-radius: 12;
+    -fx-alignment: center;
+}
+.app-logo-icon {
+    -fx-text-fill: white;
+    -fx-font-size: 22px;
+}
+
+/* App title */
+.app-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e3a8a;
+}
+
+/* Avatar */
+.avatar-circle {
+    -fx-background-color: #6366f1;
+    -fx-background-radius: 50;
+    -fx-alignment: center;
+}
+.avatar-initial {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+/* User info */
+.user-name {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+.user-email {
+    -fx-font-size: 12px;
+    -fx-text-fill: #475569;
+}
+
+/* Logout button (ghost) */
+.ghost-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #ef4444;
+    -fx-border-color: transparent;
+}
+.ghost-button:hover {
+    -fx-text-fill: #dc2626;
+    -fx-background-color: rgba(239,68,68,0.1);
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+.dashboard-content {
+    -fx-padding: 32;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+.card {
+    -fx-padding: 20;
+    -fx-background-radius: 16;
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 20, 0, 0, 4);
+    -fx-pref-width: 300;
+}
+
+.primary-card {
+    -fx-border-color: #c7d2fe;
+    -fx-background-color: linear-gradient(to bottom right, #eef2ff, white);
+}
+
+.success-card {
+    -fx-border-color: #bbf7d0;
+    -fx-background-color: linear-gradient(to bottom right, #ecfdf5, white);
+}
+
+/* Card titles */
+.card-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e293b;
+}
+.card-description {
+    -fx-text-fill: #475569;
+    -fx-font-size: 13px;
+}
+
+/* Buttons */
+.primary-button {
+    -fx-background-color: #4f46e5;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-padding: 10 16;
+}
+.primary-button:hover {
+    -fx-background-color: #4338ca;
+}
+
+.success-button {
+    -fx-background-color: #059669;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-padding: 10 16;
+}
+.success-button:hover {
+    -fx-background-color: #047857;
+}
+
+/* ===========================
+   Upcoming Meetings
+=========================== */
+.section-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e293b;
+}
+
+/* Meeting item card */
+.meeting-card {
+    -fx-background-color: white;
+    -fx-padding: 16;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.05), 15, 0, 0, 3);
+}
+.meeting-card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.10), 20, 0, 0, 6);
+}
+
+/* Meeting title */
+.meeting-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+/* Meeting info text */
+.meeting-info {
+    -fx-text-fill: #475569;
+    -fx-font-size: 13px;
+}
+
+/* Join button */
+.join-button {
+    -fx-background-color: #4f46e5;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+}
+.join-button:hover {
+    -fx-background-color: #4338ca;
+}

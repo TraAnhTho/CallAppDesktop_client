@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.dacs4.controllers.ParticipantsListController"
+            style="-fx-background-color: #111827;">
+    <stylesheets>
+        <URL value="@../css/participantsList.css"/>
+    </stylesheets>
+
+    <!-- header -->
+    <top>
+        <HBox style="-fx-padding: 8 12; -fx-border-color: #374151; -fx-border-width: 0 0 1 0;">
+            <Label fx:id="titleLabel"
+                   text="Người tham gia (0)"
+                   style="-fx-text-fill: white; -fx-font-size: 14; -fx-font-weight: bold;"/>
+        </HBox>
+    </top>
+
+    <!-- list -->
+    <center>
+        <ListView fx:id="participantsListView"
+                  style="-fx-background-color: transparent; -fx-padding: 8;"/>
+    </center>
+</BorderPane>

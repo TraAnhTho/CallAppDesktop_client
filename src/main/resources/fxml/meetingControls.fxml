@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.dacs4.controllers.MeetingControlsController"
+            styleClass="controls-root"
+            fx:id="meetingControls">
+
+    <center>
+        <HBox alignment="CENTER" spacing="24" styleClass="controls-container">
+
+            <!-- AUDIO -->
+            <VBox alignment="CENTER" spacing="6">
+                <Button fx:id="audioButton"
+                        onAction="#onToggleAudio"
+                        styleClass="control-btn">
+                    <graphic>
+                        <Label fx:id="audioIcon" styleClass="control-icon"/>
+                    </graphic>
+                </Button>
+                <Label fx:id="audioLabel" styleClass="control-text"/>
+            </VBox>
+
+            <!-- VIDEO -->
+            <VBox alignment="CENTER" spacing="6">
+                <Button fx:id="videoButton"
+                        onAction="#onToggleVideo"
+                        styleClass="control-btn">
+                    <graphic>
+                        <Label fx:id="videoIcon" styleClass="control-icon"/>
+                    </graphic>
+                </Button>
+                <Label fx:id="videoLabel" styleClass="control-text"/>
+            </VBox>
+
+            <!-- SCREEN SHARE -->
+            <VBox alignment="CENTER" spacing="6">
+                <Button fx:id="screenShareButton"
+                        onAction="#onToggleScreenShare"
+                        styleClass="control-btn">
+                    <graphic>
+                        <Label fx:id="screenShareIcon" styleClass="control-icon"/>
+                    </graphic>
+                </Button>
+                <Label fx:id="screenShareLabel" styleClass="control-text"/>
+            </VBox>
+
+            <!-- SETTINGS -->
+            <VBox alignment="CENTER" spacing="6">
+                <Button fx:id="settingsButton"
+                        onAction="#onOpenSettings"
+                        styleClass="control-btn secondary">
+                    <graphic>
+                        <Label text="⚙" styleClass="control-icon"/>
+                    </graphic>
+                </Button>
+                <Label text="Cài đặt" styleClass="control-text"/>
+            </VBox>
+
+            <!-- MORE -->
+            <VBox alignment="CENTER" spacing="6">
+                <Button fx:id="moreButton"
+                        onAction="#onMoreOptions"
+                        styleClass="control-btn secondary">
+                    <graphic>
+                        <Label text="⋮" styleClass="control-icon"/>
+                    </graphic>
+                </Button>
+                <Label text="Thêm" styleClass="control-text"/>
+            </VBox>
+
+            <!-- LEAVE -->
+            <VBox alignment="CENTER" spacing="6">
+                <Button fx:id="leaveButton"
+                        onAction="#onLeaveMeeting"
+                        styleClass="control-btn danger">
+                    <graphic>
+                        <Label text="📞" styleClass="control-icon"/>
+                    </graphic>
+                </Button>
+                <Label text="Rời khỏi" styleClass="control-text"/>
+            </VBox>
+
+        </HBox>
+    </center>
+
+</BorderPane>

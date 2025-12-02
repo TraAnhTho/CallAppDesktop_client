@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+
+<?import java.net.URL?>
+<BorderPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.dacs4.controllers.FileSharingController"
+            style="-fx-background-color: #111827;">
+    <stylesheets>
+        <URL value="@../css/fileSharing.css"/>
+    </stylesheets>
+
+    <!-- Header -->
+    <top>
+        <VBox style="-fx-padding: 12; -fx-border-color: #374151; -fx-border-width: 0 0 1 0;">
+            <Label text="Chia sẻ tệp tin"
+                   style="-fx-text-fill: white; -fx-font-size: 14; -fx-font-weight: bold;">
+                <VBox.margin>
+                    <Insets top="0" right="0" bottom="8" left="0"/>
+                </VBox.margin>
+            </Label>
+
+            <Button fx:id="uploadButton"
+                    text="Tải lên tệp tin"
+                    onAction="#handleUploadClick"
+                    maxWidth="Infinity"
+                    style="-fx-background-color: #4f46e5; -fx-text-fill: white;"/>
+        </VBox>
+    </top>
+
+    <!-- List files -->
+    <center>
+        <ListView fx:id="filesListView"
+                  style="-fx-background-color: transparent; -fx-padding: 8;"/>
+    </center>
+
+</BorderPane>

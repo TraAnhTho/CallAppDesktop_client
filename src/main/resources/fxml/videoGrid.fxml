@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import java.net.URL?>
+
+<GridPane fx:id="videoGrid"
+          fx:controller="com.example.dacs4.controllers.VideoGridController"
+          xmlns="http://javafx.com/javafx/17"
+          xmlns:fx="http://javafx.com/fxml/1"
+          hgap="16" vgap="16"
+          styleClass="video-grid-root"
+          VBox.vgrow="ALWAYS"
+          HBox.hgrow="ALWAYS">
+
+    <stylesheets>
+        <URL value="@../css/videoGrid.css"/>
+    </stylesheets>
+
+</GridPane>

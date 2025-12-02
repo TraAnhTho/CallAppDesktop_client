@@ -1,0 +1,151 @@
+/* General styles for the entire layout */
+.border-pane {
+    -fx-background-color: #111827; /* Dark background for the whole layout */
+}
+
+/* Header styles */
+#titleLabel {
+    -fx-text-fill: white;               /* White text color */
+    -fx-font-size: 14px;                /* Font size for the title */
+    -fx-font-weight: bold;              /* Bold text */
+    -fx-padding: 8px 12px;              /* Padding inside header */
+}
+
+/* Styles for participant cards */
+.participant-card {
+    -fx-background-color: #374151;       /* Dark background for participant card */
+    -fx-background-radius: 8px;          /* Rounded corners */
+    -fx-padding: 8px;                    /* Padding inside each participant card */
+    -fx-margin: 4px 0;                   /* Margin between cards */
+    -fx-transition: background-color 0.3s; /* Smooth transition for background color change */
+}
+
+/* Hover effect for participant cards */
+.participant-card:hover {
+    -fx-background-color: #4b5563;      /* Slightly lighter background on hover */
+}
+
+/* Styles for participant info */
+.participant-info {
+    -fx-text-fill: white;               /* White text color for participant name */
+    -fx-font-size: 14px;                /* Font size */
+    -fx-font-weight: bold;              /* Bold text */
+    -fx-padding: 4px;
+}
+
+/* Microphone and video status */
+.audio-video-status {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;                /* Smaller font for status indicators */
+    -fx-padding: 2px 8px;
+    -fx-background-color: #4B5563;
+    -fx-background-radius: 4px;         /* Rounded background for the status */
+}
+
+.audio-on {
+    -fx-background-color: #38B2AC;      /* Green background for audio on */
+}
+
+.audio-off {
+    -fx-background-color: #E53E3E;      /* Red background for audio off */
+}
+
+.video-on {
+    -fx-background-color: #38B2AC;      /* Green background for video on */
+}
+
+.video-off {
+    -fx-background-color: #E53E3E;      /* Red background for video off */
+}
+
+/* Host icon (Crown) */
+.crown-icon {
+    -fx-fill: gold;                     /* Gold color for the crown */
+}
+
+/* Button styles */
+.button {
+    -fx-background-color: #4f46e5;       /* Purple background */
+    -fx-text-fill: white;                 /* White text color */
+    -fx-padding: 8px 16px;                /* Padding inside the button */
+    -fx-border-radius: 4px;               /* Rounded corners */
+    -fx-font-size: 14px;                  /* Font size */
+}
+
+/* Hover effect for buttons */
+.button:hover {
+    -fx-background-color: #4338ca;        /* Darker purple when hovered */
+}
+
+/* Audio/video toggle button styles */
+.toggle-button {
+    -fx-background-color: #1D4ED8;       /* Blue background for toggle buttons */
+    -fx-text-fill: white;                 /* White text */
+    -fx-border-radius: 50%;               /* Circular button */
+    -fx-padding: 8px;                     /* Padding inside the button */
+}
+
+.toggle-button:hover {
+    -fx-background-color: #2563eb;        /* Lighter blue on hover */
+}
+
+/* Remove participant button */
+.remove-participant {
+    -fx-background-color: #EF4444;        /* Red background for remove button */
+    -fx-text-fill: white;                 /* White text */
+    -fx-border-radius: 50%;               /* Circular button */
+    -fx-padding: 8px;                     /* Padding inside the button */
+}
+
+.remove-participant:hover {
+    -fx-background-color: #dc2626;        /* Darker red on hover */
+}
+
+/* Participant avatar styles */
+.avatar {
+    -fx-background-radius: 50%;           /* Circular avatar */
+    -fx-border-width: 2px;
+    -fx-border-color: #E5E7EB;           /* Light gray border around the avatar */
+    -fx-padding: 10px;
+}
+
+.avatar-image {
+    -fx-fit-width: 40px;
+    -fx-fit-height: 40px;
+}
+
+/* ScrollArea styles */
+.scroll-area {
+    -fx-background-color: transparent;   /* Transparent background for scroll area */
+    -fx-padding: 8px;
+}
+
+/* Layouts */
+.hbox, .vbox {
+    -fx-spacing: 10px;                   /* Spacing between items */
+}
+
+/* Optional: Text field for message input */
+.text-field {
+    -fx-background-color: #374151;       /* Dark background for input field */
+    -fx-text-fill: white;                 /* White text */
+    -fx-border-radius: 4px;               /* Rounded corners */
+    -fx-padding: 8px;
+}
+
+.text-field:focused {
+    -fx-background-color: #4b5563;       /* Lighter background when focused */
+}
+
+/* Buttons inside the footer of each participant's card */
+.button-footer {
+    -fx-background-color: #4b5563;       /* Darker background for footer buttons */
+    -fx-text-fill: white;                 /* White text */
+    -fx-padding: 4px 8px;
+    -fx-border-radius: 4px;               /* Rounded corners */
+}
+
+/* Style for individual buttons (for microphone, video, remove) inside participant cards */
+.button-footer:hover {
+    -fx-background-color: #6b7280;       /* Slightly lighter on hover */
+}

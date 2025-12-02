@@ -1,0 +1,131 @@
+/* ========== GLOBAL ========== */
+.meeting-room-root {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: "Arial";
+}
+
+/* ========== HEADER ========== */
+.meeting-header {
+    -fx-background-color: #374151;
+    -fx-padding: 16;
+    -fx-spacing: 16;
+}
+
+.meeting-title {
+    -fx-font-size: 20px;
+    -fx-text-fill: white;
+}
+
+.meeting-subtitle {
+    -fx-text-fill: #9ca3af;
+}
+
+/* Buttons trong header */
+.header-toggle-button {
+    -fx-background-color: #4c51bf;
+    -fx-text-fill: white;
+    -fx-padding: 8 16;
+    -fx-background-radius: 6;
+}
+
+.header-toggle-button:hover {
+    -fx-background-color: #2b3480;
+}
+
+.leave-button {
+    -fx-background-color: #f87171;
+    -fx-text-fill: white;
+    -fx-padding: 8 16;
+    -fx-background-radius: 6;
+}
+
+.leave-button:hover {
+    -fx-background-color: #ef4444;
+}
+
+/* ========== MAIN CONTENT ========== */
+.meeting-main {
+    -fx-background-color: #1e293b;
+    -fx-padding: 16;
+}
+
+.side-panel {
+    -fx-background-color: #0f172a;
+    -fx-padding: 16;
+    -fx-pref-height: 100%;
+
+}
+
+.video-grid-root {
+    -fx-background-color: transparent;
+    -fx-padding: 16;
+}
+
+
+.side-panel Label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.side-panel Button {
+    -fx-background-color: #4c51bf;
+    -fx-text-fill: white;
+    -fx-padding: 8 16;
+    -fx-background-radius: 6;
+}
+
+.side-panel Button:hover {
+    -fx-background-color: #2b3480;
+}
+
+/* ========== VIDEO GRID ROOT ========== */
+#videoGrid {
+    -fx-background-color: #2d3748;
+    -fx-background-radius: 8;
+    -fx-padding: 16;
+}
+
+/* ========== PANELS ========== */
+#chatPanelRoot,
+#participantsPanelRoot,
+#fileSharingPanelRoot {
+    -fx-background-color: #1f2937;
+    -fx-padding: 16;
+    -fx-background-radius: 8;
+}
+
+/* ========== MEETING CONTROLS ========== */
+#meetingControls {
+    -fx-background-color: #1f2937;
+    -fx-padding: 16;
+    -fx-border-color: transparent transparent #2a2a2a transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* ========== Buttons trong meetingControls ========== */
+#meetingControls Button {
+    -fx-background-color: #4c51bf;
+    -fx-text-fill: white;
+    -fx-padding: 10;
+    -fx-background-radius: 8;
+}
+
+#meetingControls Button:hover {
+    -fx-background-color: #2b3480;
+}
+
+/* audio / video / screen */
+.audio-button, .video-button, .screen-share-button {
+    -fx-background-color: #10b981;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+    -fx-padding: 10 20;
+}
+
+.audio-button:hover,
+.video-button:hover,
+.screen-share-button:hover {
+    -fx-background-color: #059669;
+}

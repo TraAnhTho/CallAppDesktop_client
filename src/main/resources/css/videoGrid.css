@@ -1,0 +1,63 @@
+/* ROOT */
+.video-grid-root {
+    -fx-background-color: transparent;
+    -fx-padding: 8;
+}
+
+/* VIDEO TILE */
+.video-tile {
+    -fx-background-color: #1e293b;
+    -fx-background-radius: 16;
+    -fx-padding: 0;
+    -fx-alignment: center;
+}
+
+/* GRADIENT placeholder */
+.video-placeholder {
+    -fx-background-color: linear-gradient(to bottom right, #312e81, #6d28d9);
+    -fx-background-radius: 16;
+    -fx-alignment: center;
+}
+
+/* Camera icon + text */
+.video-placeholder-icon {
+    -fx-font-size: 42px;
+    -fx-text-fill: rgba(255,255,255,0.3);
+}
+
+.video-placeholder-text {
+    -fx-text-fill: rgba(255,255,255,0.5);
+}
+
+/* AVATAR */
+.avatar-circle {
+    -fx-background-color: #334155;
+    -fx-text-fill: white;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-pref-width: 110;
+    -fx-pref-height: 110;
+    -fx-background-radius: 55;
+    -fx-alignment: center;
+}
+
+/* BOTTOM INFO BAR */
+.bottom-info {
+    -fx-background-color: rgba(0,0,0,0.55);
+    -fx-padding: 10 14;
+    -fx-background-radius: 0 0 16 16;
+}
+
+.info-name {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+.status-icon {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+.status-icon.red {
+    -fx-text-fill: #ef4444;
+}

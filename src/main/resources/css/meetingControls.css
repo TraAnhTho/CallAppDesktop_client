@@ -1,0 +1,46 @@
+.controls-root {
+    -fx-background-color: transparent;
+}
+
+.controls-container {
+    -fx-background-color: rgba(20, 20, 20, 0.6);
+    -fx-padding: 16;
+    -fx-background-radius: 24;
+}
+
+.control-btn {
+    -fx-min-width: 56px;
+    -fx-min-height: 56px;
+    -fx-background-radius: 50%;
+    -fx-background-color: #ffffff22;
+    -fx-border-color: transparent;
+}
+
+.control-btn:hover {
+    -fx-background-color: #ffffff44;
+}
+
+.control-btn.secondary {
+    -fx-background-color: #ffffff11;
+}
+
+.control-btn.secondary:hover {
+    -fx-background-color: #ffffff22;
+}
+
+.control-btn.danger {
+    -fx-background-color: #d64040;
+}
+
+.control-btn.danger:hover {
+    -fx-background-color: #ff5b5b;
+}
+
+.control-icon {
+    -fx-font-size: 22px;
+}
+
+.control-text {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}

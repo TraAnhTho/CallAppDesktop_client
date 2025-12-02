@@ -1,0 +1,307 @@
+/* ===========================
+   GLOBAL
+=========================== */
+.root, .login-root {
+    -fx-background-color: linear-gradient(to bottom right, #bfdbfe, #c7d2fe);
+    -fx-font-family: "Segoe UI", sans-serif;
+}
+
+/* Container chính */
+.login-container {
+    -fx-padding: 40;
+}
+
+/* ===========================
+   LEFT BRANDING
+=========================== */
+
+/* Hộp logo */
+.logo-box {
+    -fx-background-color: #4f46e5;
+    -fx-background-radius: 20;
+    -fx-alignment: center;
+}
+
+.logo-icon {
+    -fx-font-size: 32px;
+    -fx-text-fill: white;
+}
+
+.app-name {
+    -fx-font-size: 32px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e3a8a;
+}
+
+.headline {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e40af;
+}
+
+.subheadline {
+    -fx-font-size: 14px;
+    -fx-text-fill: #475569;
+}
+
+/* Thẻ 4 tính năng */
+.feature-card {
+    -fx-background-color: rgba(255,255,255,0.6);
+    -fx-background-radius: 12;
+    -fx-padding: 10;
+}
+
+.feature-icon {
+    -fx-font-size: 26px;
+}
+
+.feature-title {
+    -fx-font-weight: bold;
+    -fx-text-fill: #1e3a8a;
+}
+
+.feature-text {
+    -fx-text-fill: #475569;
+}
+
+
+/* ===========================
+   RIGHT FORM CARD
+=========================== */
+
+.form-card {
+    -fx-background-color: white;
+    -fx-padding: 30;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 20, 0, 0, 5);
+}
+
+.form-title {
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.form-description {
+    -fx-font-size: 14px;
+    -fx-text-fill: #475569;
+}
+
+/* Input fields */
+.text-field, .password-field {
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+}
+
+/* Button chính */
+.button {
+    -fx-background-radius: 8;
+    -fx-padding: 10 20;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+#submitButton {
+    -fx-background-color: #4f46e5;
+    -fx-text-fill: white;
+}
+
+#submitButton:hover {
+    -fx-background-color: #4338ca;
+}
+
+/* Toggle link */
+.hyperlink {
+    -fx-text-fill: #4f46e5;
+    -fx-font-size: 13px;
+}
+
+.hyperlink:hover {
+    -fx-text-fill: #312e81;
+}
+
+/* Fix width cho các form item */
+.form-card VBox {
+    -fx-pref-width: 100%;
+}
+.meeting-controls-root {
+    -fx-background-color: #020617; /* gần bg-slate-900/800 */
+    -fx-padding: 8 24 8 24;
+    -fx-border-color: #1f2937;
+    -fx-border-width: 1 0 0 0;
+}
+
+.control-button {
+    -fx-background-radius: 999;
+    -fx-padding: 8 12 8 12;
+}
+
+.control-button.danger {
+    -fx-background-color: #b91c1c;
+}
+.meeting-controls-root {
+    -fx-background-color: #020617; /* gần bg-slate-900/800 */
+    -fx-padding: 16 24 16 24;
+    -fx-border-color: #1f2937;
+    -fx-border-width: 1 0 0 0;
+}
+
+.circle-button {
+    -fx-min-width: 56;
+    -fx-min-height: 56;
+    -fx-max-width: 56;
+    -fx-max-height: 56;
+    -fx-background-radius: 28;
+}
+
+.circle-button.danger {
+    -fx-background-color: #dc2626;
+}
+
+.circle-button.secondary {
+    -fx-background-color: #374151;
+}
+
+.control-label {
+    -fx-text-fill: white;
+    -fx-font-size: 11px;
+}
+.dialog-pane {
+    -fx-padding: 16;
+}
+
+.text-field {
+    -fx-background-radius: 6;
+}
+
+.button {
+    -fx-background-radius: 6;
+    -fx-padding: 8 16 8 16;
+}.dashboard-root {
+     -fx-background-color: linear-gradient(to bottom right, #f8fafc, #e5e7eb);
+ }
+
+ .dashboard-header {
+     -fx-padding: 12 24 12 24;
+     -fx-background-color: white;
+     -fx-border-color: #e5e7eb;
+     -fx-border-width: 0 0 1 0;
+ }
+
+ .app-logo {
+     -fx-background-color: #4f46e5;
+     -fx-background-radius: 12;
+ }
+
+ .app-logo-icon {
+     -fx-text-fill: white;
+     -fx-font-size: 16px;
+ }
+
+ .app-title {
+     -fx-text-fill: #1e293b;
+     -fx-font-size: 18px;
+     -fx-font-weight: bold;
+ }
+
+ .avatar-circle {
+     -fx-background-color: #4f46e5;
+     -fx-background-radius: 18;
+ }
+
+ .avatar-initial {
+     -fx-text-fill: white;
+     -fx-font-weight: bold;
+ }
+
+ .user-name {
+     -fx-text-fill: #0f172a;
+     -fx-font-weight: bold;
+ }
+
+ .user-email {
+     -fx-text-fill: #64748b;
+     -fx-font-size: 11px;
+ }
+
+ .dashboard-content {
+     -fx-padding: 24;
+ }
+
+ .card {
+     -fx-padding: 16;
+     -fx-background-radius: 12;
+     -fx-background-color: white;
+     -fx-border-radius: 12;
+     -fx-border-color: #e5e7eb;
+ }
+
+ .primary-card {
+     -fx-border-color: #c7d2fe;
+ }
+
+ .success-card {
+     -fx-border-color: #a7f3d0;
+ }
+
+ .card-title {
+     -fx-font-size: 16px;
+     -fx-font-weight: bold;
+     -fx-text-fill: #0f172a;
+ }
+
+ .card-description {
+     -fx-text-fill: #64748b;
+     -fx-font-size: 12px;
+ }
+
+ .section-title {
+     -fx-font-size: 15px;
+     -fx-font-weight: bold;
+     -fx-text-fill: #0f172a;
+ }
+
+ .meeting-card {
+     -fx-background-color: white;
+     -fx-background-radius: 12;
+     -fx-padding: 12 16 12 16;
+     -fx-border-color: #e5e7eb;
+     -fx-border-radius: 12;
+ }
+
+ .meeting-title {
+     -fx-font-weight: bold;
+     -fx-text-fill: #0f172a;
+ }
+
+ .meeting-info-row {
+     -fx-text-fill: #64748b;
+     -fx-font-size: 12px;
+ }
+
+ .meeting-bottom-row {
+     -fx-alignment: CENTER_RIGHT;
+ }
+
+ .primary-button {
+     -fx-background-color: #4f46e5;
+     -fx-text-fill: white;
+     -fx-background-radius: 999;
+ }
+
+ .success-button {
+     -fx-background-color: #059669;
+     -fx-text-fill: white;
+     -fx-background-radius: 999;
+ }
+
+ .ghost-button {
+     -fx-background-color: transparent;
+     -fx-text-fill: #0f172a;
+ }
+
+ .copy-id-button {
+     -fx-background-color: transparent;
+     -fx-border-color: transparent;
+     -fx-text-fill: #4b5563;
+ }

@@ -17,9 +17,11 @@
             xmlns="http://javafx.com/javafx/17"
             xmlns:fx="http://javafx.com/fxml/1"
             prefWidth="1200" prefHeight="800"
-            styleClass="login-root">
+            styleClass="style-root">
     <!-- CSS sẽ được load bằng code Java sau khi load FXML -->
-
+    <stylesheets>
+        <URL value="@../css/style.css"/>
+    </stylesheets>
 
     <center>
         <HBox spacing="40" alignment="CENTER" styleClass="login-container">

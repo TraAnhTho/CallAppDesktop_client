@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.ToggleButton?>
-<?import javafx.scene.control.ToggleGroup?>
-
-<ToggleGroup fx:id="toggleGroup">
-    <ToggleButton text="Option 1" />
-    <ToggleButton text="Option 2" />
-</ToggleGroup>

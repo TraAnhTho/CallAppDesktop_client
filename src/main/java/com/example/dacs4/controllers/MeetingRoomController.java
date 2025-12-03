@@ -2,6 +2,7 @@ package com.example.dacs4.controllers;
 
 import com.example.dacs4.models.ChatMessage;
 import com.example.dacs4.models.Participant;
+import com.example.dacs4.network.SocketClient;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -51,6 +52,12 @@ public class MeetingRoomController {
     private final List<ChatMessage> messages = new ArrayList<>();
 
     private Runnable leaveMeetingCallback;
+
+    private SocketClient socketClient;
+
+    public void setSocketClient(SocketClient client) {
+        this.socketClient = client;
+    }
 
 
     // ============================================================

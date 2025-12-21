@@ -11,7 +11,7 @@
             xmlns:fx="http://javafx.com/fxml/1"
             fx:id="dialogPane"
             prefWidth="420"
-            stylesheets="/css/joinMeetingDialog.css">
+            stylesheets="@../css/joinMeetingDialog.css">
 
     <headerText>
         Tham gia cuộc họp
